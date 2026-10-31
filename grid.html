@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent-container{
+            width: 800px;
+            border: 3px solid black;
+            padding: 15px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 120px 120px;
+        }
+        .child-items{
+            background-color: rgb(3, 43, 43);
+            color: aliceblue;
+            width: 100px;
+            height: 80px;
+      
+            font-size: 28px;
+        
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-container">
+        <div class="child-items">1</div>
+        <div class="child-items">2</div>
+        <div class="child-items">3</div>
+        <div class="child-items">4</div>
+        <div class="child-items">5</div>
+        <div class="child-items">6</div>
+    </div>
+</body>
+</html>

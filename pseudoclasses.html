@@ -1,0 +1,100 @@
+<!-- hover effect -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button:hover {
+            background-color: rgb(8, 52, 52);
+            color: white;
+        }
+
+        button:active {
+            background-color: blue;
+        }
+
+        /* border thickness,border style,border color */
+        input:focus {
+            border: 3px dashed green;
+        }
+
+        a:visited {
+            color: purple;
+
+        }
+        p:first-child{
+            color: cadetblue;
+        }
+p:nth-child(2){
+color: aquamarine;
+}
+       
+p:nth-child(3){
+    color: blueviolet;
+}
+
+
+
+input:checked{
+    width:25px;
+    height: 25px;
+}
+input:disabled{
+    background-color: lightgray;
+}
+input:required{
+    border: 1px solid green;
+}
+p:not(.hello){
+    color: blue;
+}
+
+    </style>
+</head>
+
+<body>
+    <p>Sukaina Batool</p>
+    <p>First Paragraph</p>
+
+    <p>Second Paragraph</p>
+
+
+    <button>Hover me</button> <br><br>
+    <!-- focus--form element -->
+    <label for="name">Name</label> <input type="text" placeholder="Enter your name" required><br><br>
+    <!-- visited pseudo class -->
+    <a href="https://www.w3school.com" target="_blank">w3 school</a>
+    <!-- first child -->
+
+
+    <h2>Checkbox example</h2>
+
+    <!-- <input type="checkbox" id="html"> -->
+
+
+    <input type="checkbox" id="html">
+    <label for="html">HTML</label>
+       
+    <input type="checkbox" id="css">
+    <label for="css">CSS</label><br>
+       
+<!-- disabled pseudo class -->
+<input type="text" disabled value="not editable">
+<!-- required field -->
+
+<label for="email">Email</label> <input type="email" required>
+
+<!-- not -->
+
+<p>This is normal</p>
+<p class="hello">This is important</p>
+
+
+
+</body>
+
+</html>

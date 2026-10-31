@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            background-color: aqua;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 150px 100px;
+            gap: 10px;
+            width: 800px;
+            margin: 50px auto;
+
+        }
+        .header{
+            grid-column:1/4 ;
+        }
+        .sidebar{
+            grid-column: 1/2;
+           
+        }
+        .content{
+            grid-column: 2/4;
+        }
+        .footer{
+            grid-column: 1/4
+            ;
+        }
+        .sidebar{
+            grid-row: 2/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- grid item -->
+         <div class="item header">
+            Header
+         </div>
+            <!-- grid item -->
+         <div class="item Sidebar">
+            Sidebar
+         </div>
+            <!-- grid item -->
+         <div class="item content">
+           Content
+         </div>
+            <!-- grid item -->
+         <div class="item footer">
+            Footer
+         </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
